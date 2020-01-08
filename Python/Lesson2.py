@@ -33,3 +33,17 @@ color = input("What is your favorite color? ")
 
 print ("Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color))
+
+
+#Date and Time Library
+
+from datetime import datetime #imports datetime from library
+now = datetime.now()
+print (now)
+print (now.month)
+print (now.day)
+print (now.year)
+
+#print date in mm/dd/year
+print ("%02d/%02d/%04d" %(now.month, now.day, now.year))
+print ("%02d:%02d:%02d" %(now.hour, now.minute, now.second))
